@@ -1,0 +1,20 @@
+.btn {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: var(--color-white);
+  padding: 12px 18px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-teal);
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+
+  &:hover {
+    background-color: var(--color-teal);
+    color: var(--color-white);
+  }
+}
+
+.btn-icon {}
+
+.btn-social {}
