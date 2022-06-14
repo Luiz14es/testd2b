@@ -9,10 +9,17 @@
   &__text {
     padding: 1.5rem;
     display: flex;
+    @media only screen and(max-width:$bp-small) {
+      font-size: 1rem;
+    }
 
     &-copy {
       flex: 1;
       margin-left: 3rem;
+
+      @media only screen and(max-width:$bp-small) {
+        font-size: 1rem;
+      }
     }
 
     &-link {
@@ -22,4 +29,27 @@
       padding: 1rem;
     }
   }
+
+  &__btn-footer {
+    background-color: #42c0c4;
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 3px;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-botao {
+      text-align: center;
+    }
+  }
+
+  @media only screen and(max-width:$bp-small) {
+    font-size: 1rem;
+  }
+}
+
+.barra {
+  border-right: 1px solid #494949;
 }

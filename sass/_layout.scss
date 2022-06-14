@@ -71,43 +71,126 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 3rem;
   padding: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 5.6rem;
 
   &__email {
-    font-size: 2rem;
     margin-top: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.2rem;
+  }
+
+  @media only screen and(max-width:$bp-medium) {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+
+    &__email {
+      font-size: 1.8rem;
+    }
   }
 }
 
 .footer {
   background-color: var(--color-dark);
-
-  > .container {
-    padding: 5rem;
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo {
-    height: 32px;
-    display: block;
-    margin-bottom: 3rem;
-  }
-}
-
-.container__img {
-  flex: 0 0 40%;
-}
-
-.container__column {
   display: flex;
-  flex-direction: column;
-  flex: 0 0 30%;
-  align-items: flex-end;
+  flex-wrap: wrap;
+}
 
-  &-link {
-    display: inline-block;
+.container {
+  display: flex;
+  font-size: 1.5rem;
+  align-content: center;
+
+  @media only screen and(max-width:$bp-large) {
+    margin: 0 auto;
+  }
+}
+
+.col {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  padding: 3rem;
+
+  &__col-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 3rem;
+
+    &__paragraph {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+  }
+
+  &__col-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  &__col-3 {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  @media only screen and(max-width:$bp-small) {
+    font-size: 1rem;
+  }
+}
+
+.img {
+  margin-bottom: 3rem;
+  margin-left: -6rem;
+
+  @media only screen and(max-width:$bp-large) {
+    margin-left: 0;
+  }
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:not(last-child) {
     margin-bottom: 3rem;
+  }
+
+  &:hover {
+    color: #42c0c4;
+  }
+}
+
+.link-1 {
+  margin-top: 1.5rem;
+}
+
+.rede-sociais {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+
+  &__box {
+    height: 4.9rem;
+    width: 4.9rem;
+    border-radius: 100px;
   }
 }
